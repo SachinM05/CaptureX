@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaptureX - Payment</title>
+    <script src="https://kit.fontawesome.com/1fc285e084.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script>
+        let total = document.querySelector("#payment-section-total")
+
+let subtotal = document.querySelector("#payment-section-subtotal")
+
+total.innerText = localStorage.getItem("total")
+
+subtotal.innerText = localStorage.getItem("subtotal")
+
+const btn = document.querySelector(".payment-btn")
+
+btn.addEventListener("click", function () {
+  const country = document.querySelector("#country").value
+  const firstName = document.querySelector("#first").value
+  const lastName = document.querySelector("#last").value
+  const street = document.querySelector("#street").value
+  const addres = document.querySelector("#address").value
+  const city = document.querySelector("#city").value
+  const post = document.querySelector("#postcode").value
+  const phone = document.querySelector("#phone-payment").value
+  if (country == "" || firstName == "" || street == "" || post == "") {
+    alert("Please Fill The Address")
+  } else {
+    let objOfPaymentData = {
+      name: firstName + " " + lastName,
+      street: street,
+      city: city,
+      post: post,
+      country: country,
+      phone: phone,
+    }
+    localStorage.setItem("objOfPaymentData", JSON.stringify(objOfPaymentData))
+    window.location.reload()
+    location.href = "paymentInput.html"
+  }
+})
+
+    </script>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .payment-container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .qr-image {
+            width: 300px;
+            height: auto;
+            margin: 20px auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Optional: Hide everything except receipt during print */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            .receipt, .receipt * {
+                visibility: visible;
+            }
+
+            .receipt {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="name-logo">
+            <h4 style="margin-left: 2%;">CaptureX</h4>
+        </div>
+
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productcart.html">Products</a></li>
+                    <li><a href="">Signup</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="productcart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Payment Section -->
+    <div class="payment-container">
+        <h2>Secure Payment</h2>
+        <img src="./images/qrnew1.jpeg" alt="QR Code" class="qr-image">
+
+        <br><br>
+
+        <button onclick="printReceipt()">Print Receipt</button>
+
+        <!-- Hidden Receipt Content for Print -->
+        <div class="receipt" style="display:none;">
+            <h2>CaptureX Receipt</h2>
+            <p>Payment Status: <strong>Successful</strong></p>
+            <p>Date: <strong><span id="date"></span></strong></p>
+            <p>Amount Paid: <strong>$50,000</strong></p>
+            <p>Tax: <strong></strong>$0.00</p>
+            
+            <p>Thank you for your purchase!</p>
+        </div>
+    </div>
+    
+    
+    <script>
+        function printReceipt() {
+        alert("Payment Successfull");
+            // Fill current date
+            document.getElementById("date").innerText = new Date().toLocaleString();
+            // Show receipt div
+            document.querySelector(".receipt").style.display = "block";
+            // Trigger print
+            window.print();
+            // Optional: Hide receipt again after printing
+            setTimeout(() => {
+                document.querySelector(".receipt").style.display = "none";
+            }, 1000);
+        }
+    </script>
+
+    
+  
+</body>
+
+</html>

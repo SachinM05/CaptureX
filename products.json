@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": "FLEX TRIPOD",
+    "category": "accessory",
+    "price": 5000,
+    "image": "./images/tripod.png",
+    "description": "Flexible tripod for DSLR/mobiles with 360-degree rotation.",
+    "spec": "Material: ABS, Height: 12\", Weight: 350g"
+  },
+  {
+    "id": 2,
+    "name": "DJI ACTION CAMERA",
+    "category": "camera",
+    "price": 30000,
+    "image": "./images/action.png",
+    "description": "Portable 4K action cam with waterproof body.",
+    "spec": "4K/60fps, 8x slow motion, RockSteady stabilization"
+  },
+  {
+    "id": 3,
+    "name": "SONY FX3",
+    "category": "camera",
+    "price": 199999,
+    "image": "./images/SONY.jpg",
+    "description": "Compact full-frame cinema camera.",
+    "spec": "4K 120fps, S-Cinetone, Dual Base ISO"
+  },
+  {
+    "id": 4,
+    "name": "CANON EOS R5",
+    "category": "camera",
+    "price": 100000,
+    "image": "./images/camera.png",
+    "description": "Mirrorless 8K video DSLR.",
+    "spec": "45MP, 8K RAW, IBIS, Dual Pixel AF II"
+  },
+  {
+    "id": 5,
+    "name": "DJI CINEMA DRONE",
+    "category": "drone",
+    "price": 200000,
+    "image": "./images/drone.png",
+    "description": "Professional drone with cinema-grade camera.",
+    "spec": "6K video, RTK, 30-min flight, 3-axis gimbal"
+  },
+  {
+    "id": 6,
+    "name": "DJI GEARS",
+    "category": "gear",
+    "price": 10000,
+    "image": "./images/gear.png",
+    "description": "Gear kit with gimbal, mount, grip.",
+    "spec": "Universal compatibility, aluminum body"
+  },
+  {
+    "id": 7,
+    "name": "STUDIO LIGHTS",
+    "category": "light",
+    "price": 350000,
+    "image": "./images/single-light.png",
+    "description": "Pro lighting with adjustable brightness.",
+    "spec": "CRI: 95+, 3200K–5600K, 1000W output"
+  },
+  {
+    "id": 8,
+    "name": "BLACKMAGIC VIDEO CAMERA",
+    "category": "camera",
+    "price": 600000,
+    "image": "./images/BLACKMAGICVIDEOCAM.jpeg",
+    "description": "Cinema camera with RAW recording.",
+    "spec": "6K, Super 35, DaVinci Resolve Studio"
+  },
+  {
+    "id": 9,
+    "name": "BOYA MIC",
+    "category": "mic",
+    "price": 3500,
+    "image": "./images/boyamic.jpeg",
+    "description": "Clip-on lavalier microphone.",
+    "spec": "Omni pattern, 3.5mm TRRS, noise reduction"
+  },
+  {
+    "id": 10,
+    "name": "CAMERA BAG",
+    "category": "accessory",
+    "price": 4500,
+    "image": "./images/camerabag.jpeg",
+    "description": "Waterproof backpack for camera gear.",
+    "spec": "Padded dividers, tripod straps, laptop sleeve"
+  },
+  {
+    "id": 11,
+    "name": "SOFTBOX KIT",
+    "category": "light",
+    "price": 20000,
+    "image": "./images/softboxkit.jpeg",
+    "description": "Photography lighting set.",
+    "spec": "2x Softboxes, 5500K bulbs, adjustable stands"
+  },
+  {
+    "id": 12,
+    "name": "RING LIGHT",
+    "category": "light",
+    "price": 3000,
+    "image": "./images/ring light.jpeg",
+    "description": "LED ring light for content creators.",
+    "spec": "12-inch, 3 color modes, USB powered"
+  },
+  {
+    "id": 13,
+    "name": "CAMERA CLEANING KIT",
+    "category": "accessory",
+    "price": 1200,
+    "image": "./images/cleaning.jpeg",
+    "description": "Cleaning tools for lenses and bodies.",
+    "spec": "Blower, brush, cloth, spray"
+  },
+  {
+    "id": 14,
+    "name": "CAMERA STRAP",
+    "category": "accessory",
+    "price": 800,
+    "image": "./images/images.jpeg",
+    "description": "Padded strap with quick release.",
+    "spec": "Adjustable, universal fit, anti-slip"
+  },
+  {
+    "id": 15,
+    "name": "LIGHT STAND",
+    "category": "light",
+    "price": 2500,
+    "image": "./images/download.jpeg",
+    "description": "Adjustable stand for lighting gear.",
+    "spec": "Height: 2m, aluminum, foldable"
+  },
+  {
+    "id": 16,
+    "name": "SHOTGUN MIC",
+    "category": "mic",
+    "price": 15000,
+    "image": "./images/download (1).jpeg",
+    "description": "Directional mic for interviews and film.",
+    "spec": "Supercardioid, phantom power, shock mount"
+  },
+  {
+    "id": 17,
+    "name": "GREEN SCREEN",
+    "category": "accessory",
+    "price": 5000,
+    "image": "./images/green.jpeg",
+    "description": "Chroma key backdrop.",
+    "spec": "6ft x 9ft, wrinkle-resistant, collapsible"
+  },
+  {
+    "id": 18,
+    "name": "MONOPOD",
+    "category": "gear",
+    "price": 2800,
+    "image": "./images/monopod.jpeg",
+    "description": "Compact support for cameras.",
+    "spec": "Height: 1.5m, anti-slip rubber base"
+  }
+]

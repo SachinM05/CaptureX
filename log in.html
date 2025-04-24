@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CaptureX - Signup</title>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1fc285e084.js" crossorigin="anonymous"></script>
+
+  <!-- Styles -->
+  <style>
+    * {
+      box-sizing: border-box;
+      
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      padding: 10px 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    .name-logo h4 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+      font-family:'Arial-bold';
+    }
+
+    nav ul li a {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+    }
+
+    /* Signup Form */
+    .signup-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 10px;
+    }
+
+    form {
+      width: 100%;
+      max-width: 600px;
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      
+    }
+
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 20px;
+    }
+
+    legend {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .gender-group {
+      margin: 10px 0;
+      display: flex;
+    }
+
+    .gender-group input[type="radio"] {
+      margin-left: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .signup-wrapper {
+        padding: 20px;
+      }
+
+      form {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <div class="name-logo">
+        <h4>CaptureX</h4>
+      </div>
+
+      <div class="nav">
+        <nav>
+          <ul>
+            <li><a href="cameramainhome.html">Home</a></li>
+            <li><a href="productcart.html">Products</a></li>
+            <li><a href="">Signup</a></li>
+            <li><a href="log in.html">Log In</a></li>
+            <li><a href="productcart.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Signup Form -->
+    <div class="signup-wrapper">
+      <form>
+        <fieldset>
+          <legend>User Personal Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="pass" required />
+
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPass" required />
+
+          <label>Gender:</label>
+          <div class="gender-group">
+            <input type="radio" name="gender" value="male" id="male" required />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female" />
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="others" id="others" />
+            <label for="others">Others</label>
+          </div>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" required></textarea>
+
+          <input type="submit"onclick="Login()" value="Submit" />
+          <script> function Login(){
+            alert("Login Successful");
+            window.location.href="productcart.html";
+
+          }
+            </script>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
